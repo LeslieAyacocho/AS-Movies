@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <EditText
+        android:id="@+id/editTextRegisterEmail"
+        android:layout_width="231dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:textColorHint="@color/teal_64dfdf"
+        app:layout_constraintEnd_toEndOf="@+id/editTextRegisterName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegisterName"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextRegisterName"
+        android:layout_width="231dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:hint="Name"
+        android:padding="5dp"
+        android:textColorHint="@color/teal_64dfdf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblLogin"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="LOGIN"
+        android:textColor="@color/teal_80ffdb"
+        android:textColorHighlight="@color/purple_6930c3"
+        android:textSize="13.5sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRegister"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+
+    <TextView
+        android:id="@+id/lblCreateAcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="ALREADY HAVE AN ACOUNT?"
+        android:textColor="#B476ECCA"
+        android:textColorHighlight="@color/purple_6930c3"
+        android:textSize="13.5sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewLogin"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="229dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="280dp"
+        android:text="SIGN UP"
+        android:textColor="@color/teal_80ffdb"
+        android:textStyle="bold"
+        app:backgroundTint="@color/purple_6930c3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegisterPassword"
+        app:layout_constraintVertical_bias="0.19"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextRegisterPassword"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textColorHint="@color/teal_64dfdf"
+        app:layout_constraintEnd_toEndOf="@+id/editTextRegisterEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegisterEmail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lblLogin"
+        android:layout_width="122dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="136dp"
+        android:text="SIGN UP"
+        android:textColor="@color/teal_80ffdb"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

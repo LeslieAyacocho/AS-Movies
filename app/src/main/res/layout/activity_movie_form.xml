@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.movie.MovieForm">
+
+
+    <TextView
+        android:id="@+id/lblLogin"
+        android:layout_width="85dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/menu_movie"
+        android:textColor="@color/teal_80ffdb"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMovieDescription"
+        android:layout_width="254dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="3dp"
+        android:textColor="@color/teal_80ffdb"
+        android:textColorHint="@color/teal_8ad4d4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMoveDescription" />
+
+    <ImageView
+        android:id="@+id/imgMoviePoster"
+        android:layout_width="176dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblLogin"
+        tools:srcCompat="@drawable/image" />
+
+    <TextView
+        android:id="@+id/lblMovieTitle2"
+        android:layout_width="138dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="4dp"
+        android:text="Release Date"
+        android:textColor="@color/purple_6930c3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMovieTitle" />
+
+    <Spinner
+        android:id="@+id/spinnerMovieGenre"
+        android:layout_width="132dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerMovieProducer"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMovieRelease" />
+
+    <TextView
+        android:id="@+id/lblMoveDescription"
+        android:layout_width="98dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="4dp"
+        android:text="Description"
+        android:textColor="@color/purple_6930c3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMovieGenre" />
+
+    <EditText
+        android:id="@+id/editTextMovieTitle"
+        android:layout_width="284dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="3dp"
+        android:textColor="@color/teal_80ffdb"
+        android:textColorHint="@color/teal_8ad4d4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMovieTitle" />
+
+    <Button
+        android:id="@+id/buttonMovieSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="@string/save"
+        android:textColor="@color/teal_80ffdb"
+        android:textStyle="bold"
+        app:backgroundTint="@color/purple_6930c3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMovieDescription"
+        app:layout_constraintVertical_bias="0.368"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lblMovieTitle"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="4dp"
+        android:text="Title"
+        android:textColor="@color/purple_6930c3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMovieSelect" />
+
+    <Spinner
+        android:id="@+id/spinnerMovieProducer"
+        android:layout_width="132dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="68dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMovieRelease" />
+
+    <Button
+        android:id="@+id/buttonMovieSelect"
+        android:layout_width="75dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="4dp"
+        android:drawableTop="@drawable/ic_baseline_image_search_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMoviePoster" />
+
+    <EditText
+        android:id="@+id/editTextMovieRelease"
+        android:layout_width="284dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="0000-12-31"
+        android:inputType="date"
+        android:padding="3dp"
+        android:textColor="@color/teal_80ffdb"
+        android:textColorHint="@color/teal_8ad4d4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMovieTitle2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

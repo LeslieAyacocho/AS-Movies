@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+
+        <TextView
+            android:id="@+id/textViewDialogMovieTitle"
+            android:layout_width="291dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="32dp"
+            android:text="TextView"
+            android:textColor="@color/teal_80ffdb"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewDialogMovie"
+            android:layout_width="133dp"
+            android:layout_height="188dp"
+            android:layout_marginBottom="328dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDialogMovieTitle"
+            app:layout_constraintVertical_bias="1.0"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textViewDialogMovieGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="@color/teal_80ffdb"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDialogMovie" />
+
+        <TextView
+            android:id="@+id/textViewDialogMovieProducer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="TextView"
+            android:textColor="@color/teal_80ffdb"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDialogMovieGenre" />
+
+        <TextView
+            android:id="@+id/textViewDialogMovieRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/purple_6930c3"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/textViewDialogMovieTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDialogMovieTitle" />
+
+        <TextView
+            android:id="@+id/textViewDialogMovieDescription"
+            android:layout_width="344dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="@color/teal_80ffdb"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Genre:"
+            android:textColor="@color/purple_6930c3"
+            app:layout_constraintStart_toStartOf="@+id/textViewDialogMovieRelease"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDialogMovie" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Producer:"
+            android:textColor="@color/purple_6930c3"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recViewMovieCast"
+            android:layout_width="343dp"
+            android:layout_height="119dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewDialogMovieDescription"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDialogMovieDescription"
+            app:layout_constraintVertical_bias="0.0" />
+<!--        tools:listitem="@layout/item_actor"-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

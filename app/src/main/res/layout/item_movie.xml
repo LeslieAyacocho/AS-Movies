@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgViewMovieItem"
+                android:layout_width="131dp"
+                android:layout_height="176dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@color/purple_6930c3" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/textMovieGenreID"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="TextView"-->
+            <!--                tools:layout_editor_absoluteX="144dp"-->
+            <!--                tools:layout_editor_absoluteY="158dp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/textMovieProducerID"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="TextView"-->
+            <!--                tools:layout_editor_absoluteX="202dp"-->
+            <!--                tools:layout_editor_absoluteY="158dp" />-->
+
+            <TextView
+                android:id="@+id/textMovieTitle"
+                android:layout_width="174dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="20dp"
+                android:text="TextView"
+                android:textColor="@color/teal_80ffdb"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/buttonMovieEdit"
+                app:layout_constraintStart_toEndOf="@+id/imgViewMovieItem"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textMovieRelease"
+                android:layout_width="167dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="64dp"
+                android:text="TextView"
+                android:textColor="@color/purple_6930c3"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toEndOf="@+id/imgViewMovieItem"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/buttonMovieDelete"
+                android:layout_width="63dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/purple_6930c3"
+                android:drawableTop="@drawable/ic_baseline_delete_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/buttonMovieEdit"
+                android:layout_width="63dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/purple_6930c3"
+                android:drawableTop="@drawable/ic_baseline_create_24"
+                app:layout_constraintBottom_toTopOf="@+id/buttonMovieDelete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.833" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

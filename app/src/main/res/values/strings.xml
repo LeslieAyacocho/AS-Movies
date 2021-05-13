@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_movie">Movie</string>
+    <string name="menu_actor">Actor</string>
+    <string name="menu_producer">Producer</string>
+    <string name="menu_genre">Genre</string>
+    <string name="labelName">Name</string>
+    <string name="labelEmail">Email</string>
+    <string name="labelNote">Notes</string>
+    <string name="save">Save</string>
+    <string name="apiURL">http://192.168.0.36:8000/api/</string>
+    <string name="apiURLImg">http://192.168.0.36:8000/</string>
+<!--    <string name="apiURLImg">http://192.168.100.16:8000/</string>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_movie_form">MovieForm</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+<!--            <string name="apiURL">http://192.168.100.16:8000/api/</string>-->
+
+</resources>

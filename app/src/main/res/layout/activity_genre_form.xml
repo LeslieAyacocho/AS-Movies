@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.genre.GenreForm">
+
+
+    <EditText
+        android:id="@+id/editTextGenreName"
+        android:layout_width="194dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Genre"
+        android:inputType="textPersonName"
+        android:textColor="@color/teal_80ffdb"
+        android:textColorHint="@color/teal_8ad4d4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblGenreName" />
+
+    <TextView
+        android:id="@+id/lblGenreName"
+        android:layout_width="72dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/labelName"
+        android:textColor="@color/purple_6930c3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblGenre" />
+
+    <Button
+        android:id="@+id/buttonGenreSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="@string/save"
+        android:textColor="@color/teal_80ffdb"
+        android:textStyle="bold"
+        app:backgroundTint="@color/purple_6930c3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGenreName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGenreName"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lblGenre"
+        android:layout_width="85dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="71dp"
+        android:text="@string/menu_genre"
+        android:textColor="@color/teal_80ffdb"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    >
+</androidx.constraintlayout.widget.ConstraintLayout>
